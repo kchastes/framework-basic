@@ -10,9 +10,11 @@ spring:
       location: banner.png # 指定banner图像位置来源. 在名称不是banner的情况下使用 .gif .png .jpg 其他图片格式无效
     location: banner.txt # 指定banner文本的位置.
   #config:
-    # name: myBoot # 更改默认的配置文件名称 推荐使用命令行操作.
-    # location: optional:classpath:/default.properties # 指定配置文件路径 可以用,隔开
+    #name: girl # 更改默认的配置文件名称 推荐使用命令行操作.
+    #location: optional:classpath:/girl.yml  # 指定配置文件路径 这个是替代 可以用,隔开
+    #additional-location: optional:file:./config/girl.yml 是追加,进行覆盖
   profiles:
     active:
       - test
 name: file/app.yml
+girl: ll

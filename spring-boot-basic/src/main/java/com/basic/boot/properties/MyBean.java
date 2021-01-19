@@ -13,12 +13,16 @@ public class MyBean {
     private String name;
     @Value("${age}")
     private String age;
+    @Value("${girl}")
+    private String girl;
+
 
     @Override
     public String toString() {
         return "MyBean{" +
                 "name='" + name + '\'' +
                 ", age='" + age + '\'' +
+                ", girl='" + girl + '\'' +
                 '}';
     }
 }
