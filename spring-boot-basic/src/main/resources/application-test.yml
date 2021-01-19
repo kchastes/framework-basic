@@ -1,0 +1,15 @@
+# 使用的值均为默认值
+spring:
+  main:
+    log-startup-info: true # 显示启动日志 false -> 不显示启动日志.
+    lazy-initialization: false # 延迟初始化bean true -> 使用延迟初始化 局部控制使用@Lazy(false)决定是否延迟初始化.
+    banner-mode: console # 将启动横幅打印到控制台 log->日志 off->关闭
+  banner: # 可以同时使用图片和文本banner,图片会先显示. 默认名称都是叫banner 通过location指定其他名称.
+    charset: UTF-8 # 指定banner的编码.
+    image:
+      location: banner.png # 指定banner图像位置来源. 在名称不是banner的情况下使用 .gif .png .jpg 其他图片格式无效
+    location: banner.txt # 指定banner文本的位置.
+  #config:
+    # name: myBoot # 更改默认的配置文件名称 推荐使用命令行操作.
+    # location: optional:classpath:/default.properties # 指定配置文件路径 可以用,隔开
+name: res/test.yml
