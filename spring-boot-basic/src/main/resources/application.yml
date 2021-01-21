@@ -18,5 +18,16 @@ spring:
       - dev # 激活特定环境配置.后激活的覆盖前面激活的
 name: default application.yml
 age: ${random.int(20,50)}
-
+debug: true
+#logging: 日志级别
+#  level: debug
+#    root: info
+#    com.boot.test: debug
+#logging: 设置日志属性
+#  logback:
+#    rollingpolicy:
+#      max-file-size:
+#logging: 日志格式
+#  pattern:
+#    console:
 # --- 表示一个文档的结束,会覆盖上面的定义. properties使用#--分割,不建议将特定于配置文件的 YAML 文件和多个 YAML 文档混合使用
